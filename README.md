@@ -15,7 +15,7 @@ Les créations réalisées pendant l'atelier seront ensuite dessinées à l'aide
 ### Mardi 15 Septembre
 - Présentation Julien / parcours.
 - Présentation de l'atelier.
-- Présentation et installation des outils.
+- Présentation et installation des outils : création d'un compte sur [editor.p5js.org](https://editor.p5js.org/)
 - Découverte des concepts de base de la programmation : 
     - Recoding pas à pas de [« Schotter » de Georg Nees](https://collections.vam.ac.uk/item/O221321/schotter-print-nees-georg/) (1968-1970), briques programmation.
     - Expérimentation autour de cet algorithme de dessin.
@@ -44,4 +44,5 @@ Il est attendu au moins *un* dessin par étudiant. Je vous demanderai de décrir
 - [recodeproject.com](https://recodeproject.com/)<br />_The ReCode Project is a community-driven effort to preserve computer art by translating it into a modern programming language (p5.js). Every translated work will be available to the public to learn from, share, and build on._
 - [drawingbots.com/algorithms](https://drawingbots.com/algorithms/)<br />_A visual catalog of the algorithms behind pen-plotter art_
 - [bookofshapes.com](https://bookofshapes.com/)<br />_A collection of minimal, generative and customizable SVG-patterns_.
-- [Recoding : aux sources du dessin génératif / Stereolux / 2026](https://github.com/v3ga/Workshop_Recoding_Stereolux_2026)<br />Atelier à Stereolux (Nantes) sur le même thème. 
+- [Recoding : aux sources du dessin génératif / Stereolux / 2026](https://github.com/v3ga/Workshop_Recoding_Stereolux_2026)<br />Atelier à Stereolux (Nantes) sur le même thème.
+- [p5.plotSvg](https://github.com/golanlevin/p5.plotSvg) <br />_p5.js library for exporting SVG files tailored for pen plotting._
