@@ -42,7 +42,7 @@ Il est attendu au moins *un* dessin par étudiant. Je vous demanderai de décrir
 
 ## Ressources 
 - [recodeproject.com](https://recodeproject.com/)<br />_The ReCode Project is a community-driven effort to preserve computer art by translating it into a modern programming language (p5.js). Every translated work will be available to the public to learn from, share, and build on._
-- [drawingbots.com/algorithms](https://drawingbots.com/algorithms/)<br />_A visual catalog of the algorithms behind pen-plotter art_
+- [drawingbots.com/algorithms](https://drawingbots.com/algorithms/)<br />_A visual catalog of the algorithms behind pen-plotter art_.
 - [bookofshapes.com](https://bookofshapes.com/)<br />_A collection of minimal, generative and customizable SVG-patterns_.
 - [Recoding : aux sources du dessin génératif / Stereolux / 2026](https://github.com/v3ga/Workshop_Recoding_Stereolux_2026)<br />Atelier à Stereolux (Nantes) sur le même thème.
 - [p5.plotSvg](https://github.com/golanlevin/p5.plotSvg) <br />_p5.js library for exporting SVG files tailored for pen plotting._
