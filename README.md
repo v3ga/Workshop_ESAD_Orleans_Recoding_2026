@@ -35,9 +35,9 @@ Pour faciliter l'impression sur traceur, nous travaillerons à partir d'un progr
 Ce template intègre directement un export au format [SVG](https://developer.mozilla.org/fr/docs/Web/SVG) du dessin produit sur l'écran, avec une interface minimale (un bouton).
 Plusieurs façons de créer :
 1. **La plus « ardue »** : partir du template et écrire soi-même le code.
-2. **La plus « naturelle »** : partir d'un programme existant sur [recodeproject.com](https://recodeproject.com/) et modifier le code, en essayant de comprendre comment tel ou tel paramètre influe sur le dessin final, comment vous pouvez modifier les commandes de dessin pour s'approprier l'écriture de code. 
-3. **La plus « facile »** et plutôt dans l'air du temps : utiliser un chatbot (Claude, Copilot, ChatGPT entre autres) en lui donnant le template impérativement et lui indiquant précisément la composition graphique, en utilisant des algorithmes déjà connus (voir par exemple le site [https://drawingbots.com/algorithms/](drawingbots.com/algorithms))
-Il est attendu au moins *un* dessin par étudiant. Je vous demanderai de décrire en quelques mots le procédé que vous avez utilisé pour produire la composition. 
+2. **La plus « naturelle »** : partir d'un programme existant sur [recodeproject.com](https://recodeproject.com/) et modifier le code, en essayant de comprendre comment tel ou tel paramètre influe sur le dessin final, comment vous pouvez modifier les commandes de dessin pour s'approprier l'écriture de code. Voir comment l'importer dans [le template](https://editor.p5js.org/v3ga/sketches/qtX8EAO6n).
+3. **La plus « facile »** et plutôt dans l'air du temps : utiliser un chatbot (Claude, Copilot, ChatGPT entre autres) en lui donnant le code [du template](https://editor.p5js.org/v3ga/sketches/qtX8EAO6n) impérativement et lui indiquant précisément la composition graphique, en utilisant des algorithmes déjà connus (voir par exemple le site [drawingbots.com/algorithms](https://drawingbots.com/algorithms/))
+Il est attendu au moins *un* dessin par étudiant. Je vous demanderai de décrire en quelques mots le procédé que vous avez utilisé pour produire chaque composition. 
 
 ## Ressources 
 - [recodeproject.com](https://recodeproject.com/)<br />_The ReCode Project is a community-driven effort to preserve computer art by translating it into a modern programming language (p5.js). Every translated work will be available to the public to learn from, share, and build on._
