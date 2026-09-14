@@ -37,6 +37,7 @@ Plusieurs façons de créer :
 1. **La plus « ardue »** : partir du template et écrire soi-même le code.
 2. **La plus « naturelle »** : partir d'un programme existant sur [recodeproject.com](https://recodeproject.com/) et modifier le code, en essayant de comprendre comment tel ou tel paramètre influe sur le dessin final, comment vous pouvez modifier les commandes de dessin pour s'approprier l'écriture de code. Voir comment l'importer dans [le template](https://editor.p5js.org/v3ga/sketches/qtX8EAO6n).
 3. **La plus « facile »** et plutôt dans l'air du temps : utiliser un chatbot (Claude, Copilot, ChatGPT entre autres) en lui donnant le code [du template](https://editor.p5js.org/v3ga/sketches/qtX8EAO6n) impérativement et lui indiquant précisément la composition graphique, en utilisant des algorithmes déjà connus (voir par exemple le site [drawingbots.com/algorithms](https://drawingbots.com/algorithms/))
+
 Il est attendu au moins *un* dessin par étudiant. Je vous demanderai de décrire en quelques mots le procédé que vous avez utilisé pour produire chaque composition. 
 
 ## Ressources 
