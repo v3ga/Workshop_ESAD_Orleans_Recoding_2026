@@ -9,17 +9,23 @@ En jouant sur les paramètres, les règles ou la structure même des algorithmes
 
 Les créations réalisées pendant l'atelier seront ensuite dessinées à l'aide de plotters faisant le lien entre programmation, dessin algorithmique et matérialité du trait.
 
+www.recodeproject.com
+
 ## Déroulé
 ### Mardi 15 Septembre
 - Présentation Julien / parcours.
 - Présentation de l'atelier.
 - Présentation et installation des outils.
-- Découvertes des concepts de base de la programmation : 
-    - « Recoding » pas à pas  
+- Découverte des concepts de base de la programmation : 
+    - Recoding pas à pas de [« Schotter » de Georg Nees](https://collections.vam.ac.uk/item/O221321/schotter-print-nees-georg/)(1968-1970), briques programmation.
+    - Expérimentation autour de cet algorithme de dessin.
+- Découverte d'algorithmes classiques utilisés dans le dessin algorithmique : https://drawingbots.com/algorithms/
 - Test d'impression à plusieurs sur une machine (AxiDraw v3) ou iDraw.
 
-### Mercredi 16 Septembre
-### Jeudi 17 Septembre
+### Mercredi 16 & Jeudi 17 Septembre
+- Découverte d'algorithmes interactions temps réel via [ml5.js](https://ml5js.org/)
+- Utilisation de prompts en s'appuyant sur les connaissances pour l'aide à l'écriture de programme, être capable de comprendre et d'orienter le code généré.  
+- Créations et impressions de dessin.
 
 ### Vendredi 18 Septembre
-- Préparation de l'exposition à l'école. 
+- Exposition des productions à l'école, prévoir une courte vidéo pour communiquer sur l'évènement.  
