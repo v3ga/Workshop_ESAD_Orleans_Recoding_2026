@@ -36,7 +36,7 @@ Ce template intègre directement un export au format [SVG](https://developer.moz
 Plusieurs façons de créer :
 1. **La plus « ardue »** : partir du template et écrire soi-même le code.
 2. **La plus « naturelle »** : partir d'un programme existant sur [recodeproject.com](https://recodeproject.com/) et modifier le code, en essayant de comprendre comment tel ou tel paramètre influe sur le dessin final, comment vous pouvez modifier les commandes de dessin pour s'approprier l'écriture de code. 
-3. **La plus « facile »** et plutôt dans l'air du temps : utiliser un chatbot (Claude, Copilot, ChatGPT entre autres)en lui donnant le template impérativement et lui indiquant précisément la composition graphique, en utilisant des algorithmes déjà connus (voir par exemple le site [https://drawingbots.com/algorithms/](drawingbots.com/algorithms))
+3. **La plus « facile »** et plutôt dans l'air du temps : utiliser un chatbot (Claude, Copilot, ChatGPT entre autres) en lui donnant le template impérativement et lui indiquant précisément la composition graphique, en utilisant des algorithmes déjà connus (voir par exemple le site [https://drawingbots.com/algorithms/](drawingbots.com/algorithms))
 Il est attendu au moins *un* dessin par étudiant. Je vous demanderai de décrire en quelques mots le procédé que vous avez utilisé pour produire la composition. 
 
 ## Ressources 
