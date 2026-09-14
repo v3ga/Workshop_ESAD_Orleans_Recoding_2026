@@ -9,7 +9,7 @@ En jouant sur les paramètres, les règles ou la structure même des algorithmes
 
 Les créations réalisées pendant l'atelier seront ensuite dessinées à l'aide de plotters faisant le lien entre programmation, dessin algorithmique et matérialité du trait.
 
-www.recodeproject.com
+<img src="251119_Plots_workshop_ESAD_4096w.jpg" />
 
 ## Déroulé
 ### Mardi 15 Septembre
