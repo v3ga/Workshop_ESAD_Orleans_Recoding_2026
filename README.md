@@ -55,3 +55,4 @@ Il est attendu au moins *un* dessin par étudiant. Je vous demanderai de décrir
 - [bookofshapes.com](https://bookofshapes.com/)<br />_A collection of minimal, generative and customizable SVG-patterns_.
 - [Recoding : aux sources du dessin génératif / Stereolux / 2026](https://github.com/v3ga/Workshop_Recoding_Stereolux_2026)<br />Atelier à Stereolux (Nantes) sur le même thème.
 - [p5.plotSvg](https://github.com/golanlevin/p5.plotSvg) <br />_p5.js library for exporting SVG files tailored for pen plotting._
+- [Computer art on V&A museum](https://collections.vam.ac.uk/search/?id_category=THES49037&page=1&page_size=15)
