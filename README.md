@@ -14,8 +14,8 @@ Les créations réalisées pendant l'atelier seront ensuite dessinées à l'aide
 ## Template
 https://editor.p5js.org/v3ga/sketches/qtX8EAO6n
 
-### Exemple : Schotter de Georg Nees
-https://editor.p5js.org/v3ga/sketches/dlwgxSIlj
+### Collections de programmes
+https://editor.p5js.org/v3ga/collections/N_0k_UUxE
 
 ## Déroulé
 ### Mardi 15 Septembre
