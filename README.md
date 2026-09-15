@@ -14,6 +14,9 @@ Les créations réalisées pendant l'atelier seront ensuite dessinées à l'aide
 ## Template
 https://editor.p5js.org/v3ga/sketches/qtX8EAO6n
 
+### Exemple : Schotter de Georg Nees
+https://editor.p5js.org/v3ga/sketches/dlwgxSIlj
+
 ## Déroulé
 ### Mardi 15 Septembre
 - Présentation Julien / parcours.
