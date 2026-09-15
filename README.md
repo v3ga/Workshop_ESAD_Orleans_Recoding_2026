@@ -15,7 +15,10 @@ Les créations réalisées pendant l'atelier seront ensuite dessinées à l'aide
 ### Mardi 15 Septembre
 - Présentation Julien / parcours.
 - Présentation de l'atelier.
-- Présentation et installation des outils : création d'un compte sur [editor.p5js.org](https://editor.p5js.org/)
+- Présentation et installation des outils :
+    - création d'un compte sur [editor.p5js.org](https://editor.p5js.org/)
+    - installation de [Inkscape](https://inkscape.fr/)
+    - installation [des outils AxiDraw](https://wiki.evilmadscientist.com/Axidraw_Software_Installation)
 - Découverte des concepts de base de la programmation : 
     - Recoding pas à pas de [« Schotter » de Georg Nees](https://collections.vam.ac.uk/item/O221321/schotter-print-nees-georg/) (1968-1970), briques programmation.
     - Expérimentation autour de cet algorithme de dessin.
