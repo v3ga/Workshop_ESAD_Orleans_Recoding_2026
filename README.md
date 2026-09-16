@@ -54,7 +54,9 @@ Dans le dossier / drive https://drive.google.com/drive/folders/1ym-fd3AQx3gC_75Q
 - créer un dossier avec le nom du sketch / œuvre
 - télécharger les fichiers (index.html / sketch.js / style.css) dans ce dossier
 - télécharger une courte description du procédé et de l'œuvre produire au format .txt (text brut, pas de mise en page)
-- télécharger une photo du dessin et une capture d'écran
+- télécharger :
+    - le fichier .svg et .png du dessin
+    - une photo du dessin
 
 ## Ressources 
 - [recodeproject.com](https://recodeproject.com/)<br />_The ReCode Project is a community-driven effort to preserve computer art by translating it into a modern programming language (p5.js). Every translated work will be available to the public to learn from, share, and build on._
