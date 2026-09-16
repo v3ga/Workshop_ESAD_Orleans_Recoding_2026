@@ -11,11 +11,12 @@ Les créations réalisées pendant l'atelier seront ensuite dessinées à l'aide
 
 <img src="251119_Plots_workshop_ESAD_4096w.jpg" />
 
-## Template
+## Collection de sketches
+https://editor.p5js.org/v3ga/collections/N_0k_UUxE
+
+#### Template
 https://editor.p5js.org/v3ga/sketches/qtX8EAO6n
 
-### Collections de programmes
-https://editor.p5js.org/v3ga/collections/N_0k_UUxE
 
 ## Déroulé
 ### Mardi 15 Septembre
@@ -47,7 +48,13 @@ Plusieurs façons de créer :
 2. **La plus « naturelle »** : partir d'un programme existant sur [recodeproject.com](https://recodeproject.com/) et modifier le code, en essayant de comprendre comment tel ou tel paramètre influe sur le dessin final, comment vous pouvez modifier les commandes de dessin pour s'approprier l'écriture de code. Voir comment l'importer dans [le template](https://editor.p5js.org/v3ga/sketches/qtX8EAO6n).
 3. **La plus « facile »** et plutôt dans l'air du temps : utiliser un chatbot (Claude, Copilot, ChatGPT entre autres) en lui donnant le code [du template](https://editor.p5js.org/v3ga/sketches/qtX8EAO6n) impérativement et lui indiquant précisément la composition graphique, en utilisant des algorithmes déjà connus (voir par exemple le site [drawingbots.com/algorithms](https://drawingbots.com/algorithms/))
 
-Il est attendu au moins *un* dessin par étudiant. Je vous demanderai de décrire en quelques mots le procédé que vous avez utilisé pour produire chaque composition. 
+## Rendu
+Dans le dossier / drive https://drive.google.com/drive/folders/1ym-fd3AQx3gC_75QnPE4HP94GriLb9-C?usp=sharing : 
+- créer un dossier avec votre nom / prénom
+- créer un dossier avec le nom du sketch / œuvre
+- télécharger les fichiers (index.html / sketch.js / style.css) dans ce dossier
+- télécharger une courte description du procédé et de l'œuvre produire au format .txt (text brut, pas de mise en page)
+- télécharger une photo du dessin et une capture d'écran
 
 ## Ressources 
 - [recodeproject.com](https://recodeproject.com/)<br />_The ReCode Project is a community-driven effort to preserve computer art by translating it into a modern programming language (p5.js). Every translated work will be available to the public to learn from, share, and build on._
