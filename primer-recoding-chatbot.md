@@ -63,18 +63,15 @@ let colorBg = "#DFDBD5"; // couleur de fond
 let colorStroke = "#000"; // couleur du trait
 
 // --------------------------------
-let bDoExportSvg = false;
-// Format déja défini : A5,A4,A3,40x40
-// Exemple : rajouter un format
-// PAPER_FORMATS["50x50"] = {width:500, height:500};
-
-// --------------------------------
 function setup()
 {
+  // Format déja défini : A5,A4,A3,40x40
+  // Exemple : rajouter un format
+  // PAPER_FORMATS["50x50"] = {width:500, height:500};
+  
   createPaperCanvas(600, "A3");
   createUI();
   noLoop();
-  p5.disableFriendlyErrors = true;
 }
 
 // --------------------------------
@@ -104,7 +101,11 @@ function draw()   // <-- draw() est identique au template d'origine
   }
 }
 
+// --------------------------------
+// Ne pas éditer le code en dessous
+p5.disableFriendlyErrors = true;
 let seed = 0; // graine du hasard du dessin courant
+let bDoExportSvg = false;
 
 let PAPER_FORMATS = {
   "A5": { width: 148, height: 210 },
@@ -132,7 +133,8 @@ function initRandom()
 // --------------------------------
 function createUI()
 {
-  createButton("exporter").mousePressed( _=>{bDoExportSvg=true; applySeed(); redraw()} )
+  createButton("exporter .svg").mousePressed( _=>{bDoExportSvg=true; applySeed(); redraw()} )
+  createButton("exporter .png").mousePressed( _=>{save(`${title.split('.')[0]}.png`)} )
   createButton("nouveau").mousePressed( _=>{initRandom(); redraw()} )
 }
 
