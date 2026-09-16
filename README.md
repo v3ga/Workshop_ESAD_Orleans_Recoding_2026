@@ -46,6 +46,7 @@ Plusieurs façons de créer :
 1. **La plus « ardue »** : partir du template et écrire soi-même le code.
 2. **La plus « naturelle »** : partir d'un programme existant sur [recodeproject.com](https://recodeproject.com/) et modifier le code, en essayant de comprendre comment tel ou tel paramètre influe sur le dessin final, comment vous pouvez modifier les commandes de dessin pour s'approprier l'écriture de code. Voir comment l'importer dans [le template](https://editor.p5js.org/v3ga/sketches/C9dFixyWn).
 3. **La plus « facile »** et plutôt dans l'air du temps : utiliser un chatbot (Claude, Copilot, ChatGPT entre autres) en lui donnant le code [du template](https://editor.p5js.org/v3ga/sketches/C9dFixyWn) impérativement et lui indiquant précisément la composition graphique, en utilisant des algorithmes déjà connus (voir par exemple le site [drawingbots.com/algorithms](https://drawingbots.com/algorithms/))
+<br />👉 **« Contrat »** pour démarrer une conversation : https://github.com/v3ga/Workshop_ESAD_Orleans_Recoding_2026/blob/main/primer-recoding-chatbot.md
 
 ## Rendu
 Dans le dossier / drive https://drive.google.com/drive/folders/1ym-fd3AQx3gC_75QnPE4HP94GriLb9-C?usp=sharing : 
