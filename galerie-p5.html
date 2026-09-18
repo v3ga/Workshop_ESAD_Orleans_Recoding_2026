@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galerie p5.js — 3 sketches</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body { height: 100vh; overflow: hidden; background: #000; }
+
+  .gallery {
+    display: flex;
+    height: 100vh;
+  }
+  .slot {
+    flex: 1 1 0;
+    min-width: 0;               /* indispensable pour que flex ne déborde pas */
+    position: relative;
+    overflow: hidden;
+  }
+  .slot canvas { display: block; }
+</style>
+</head>
+<body>
+  <div class="gallery">
+    <div class="slot" id="slot-1"></div>
+    <div class="slot" id="slot-2"></div>
+    <div class="slot" id="slot-3"></div>
+  </div>
+
+<script>
+/* =====================================================================
+   Chaque sketch est une fonction qui reçoit "p".
+   -> Tout appel p5 doit être préfixé par p.  (p.background, p.circle, ...)
+   -> Pour connaître la taille du slot : holder.clientWidth / clientHeight
+   Remplace le corps de chaque fonction par le travail de l'étudiant·e.
+   ===================================================================== */
+
+
+/* ========================= SLOT 1 ========================= */
+function sketch1(p) {
+  const holder = document.getElementById('slot-1');
+  let balls = [];
+
+  p.setup = function () {
+    p.createCanvas(holder.clientWidth, holder.clientHeight);
+    for (let i = 0; i < 14; i++) {
+      balls.push({
+        x: p.random(p.width), y: p.random(p.height),
+        vx: p.random(-2.5, 2.5), vy: p.random(-2.5, 2.5),
+        r: p.random(8, 26),
+        c: p.color(p.random(120, 255), p.random(80, 200), p.random(180, 255))
+      });
+    }
+  
+    p.noLoop();
+  };
+
+  p.draw = function () {
+
+    p.background("#DFDBD5");
+  p.stroke("#000");
+  p.noFill();
+
+let nbFamilles = 3;              // nombre de familles de droites superposées
+let nbLignesParFamille = 200;    // densité du maillage dans chaque famille
+let rayonMin = p.min(p.width, p.height) * 0.35; // rayon minimum des cercles générateurs
+let rayonMax = p.min(p.width, p.height) * 0.75; // rayon maximum (grand = pointes qui débordent du cadre)
+let vitesseMin = 1;              // vitesse de rotation minimum
+let vitesseMax = 2;              // vitesse de rotation maximum (grand = formes plus tourmentées)
+
+
+for (let f = 0; f < nbFamilles; f++) {
+  // Centres tirés dans une zone large, y compris hors de la page,
+  // pour que les courbes débordent et créent des pointes coupées par le cadre.
+  let cx1 = p.random(p.width * -0.1, p.width * 1.1);
+  let cy1 = p.random(p.height * -0.1, p.height * 1.1);
+  let cx2 = p.random(p.width * -0.1, p.width * 1.1);
+  let cy2 = p.random(p.height * -0.1, p.height * 1.1);
+
+
+  let r1 = p.random(rayonMin, rayonMax);
+  let r2 = p.random(rayonMin, rayonMax);
+  let vitesseA = p.floor(p.random(vitesseMin, vitesseMax));
+  let vitesseB = p.floor(p.random(vitesseMin, vitesseMax));
+  let dephasage = p.random(p.TWO_PI);
+
+
+  dessineEnveloppe(p,cx1, cy1, r1, cx2, cy2, r2, nbLignesParFamille, vitesseA, vitesseB, dephasage);
+
+  }
+}
+
+  p.windowResized = function () {
+    p.resizeCanvas(holder.clientWidth, holder.clientHeight);
+  };
+}
+
+
+/* ========================= SLOT 2 ========================= */
+function sketch2(p) {
+  const holder = document.getElementById('slot-2');
+  let a = 0;
+
+  p.setup = function () {
+    p.createCanvas(holder.clientWidth, holder.clientHeight);
+    p.rectMode(p.CENTER);
+    p.noLoop();
+  };
+
+  p.draw = function () {
+
+    p.background("#000");
+    p.stroke("#FFF");
+    p.noFill();
+
+
+    // PARAMÈTRES DU HASARD
+    let minFeux = 3;              // nombre minimum de feux
+    let maxFeux = 3;              // nombre maximum de feux
+
+    let minRayons = 15;          // minimum de branches par feu
+    let maxRayons = 25;          // maximum de branches par feu
+
+    let minPoints = 8;           // minimum de points par branche
+    let maxPoints = 20;          // maximum de points par branche
+
+    let tailleMin = 2;           // taille minimale des étoiles
+    let tailleMax = 15;          // taille maximale des étoiles
+
+    let courbureMin = 0;         // courbure minimale
+    let courbureMax = 0;         // courbure maximale
+
+
+    // Nombre de feux choisi au hasard
+    let nbFeux = p.floor(p.random(minFeux, maxFeux + 1));
+
+
+    // Création des différents feux
+    for (let f = 0; f < nbFeux; f++) {
+
+      // Nouvelle source : position aléatoire PARTOUT sur la feuille
+      let baseX = p.random(p.width * 0.08, p.width * 0.92);
+      let baseY = p.random(p.height * 0.08, p.height * 0.92);
+
+      // Nombre de branches aléatoire
+      let nbRayons = p.floor(p.random(minRayons, maxRayons + 1));
+
+      // Direction générale aléatoire
+      let direction = p.random(p.TWO_PI);
+
+
+      // Création des branches
+      for (let r = 0; r < nbRayons; r++) {
+
+        // Direction de chaque branche
+        let angle = direction + p.random(-p.PI * 0.9, p.PI * 0.9);
+
+        // Courbure aléatoire de cette branche
+        let courbure = p.random(courbureMin, courbureMax);
+
+        // Nombre de points aléatoire
+        let nbPoints = p.floor(p.random(minPoints, maxPoints + 1));
+
+
+        // Création des étoiles le long de la trajectoire
+        for (let i = 0; i < nbPoints; i++) {
+
+          // Position entre le départ et le sommet
+          let t = i / (nbPoints - 1);
+
+          // Distance parcourue depuis la source
+          let distance = p.min(p.width, p.height) * 0.35 * t;
+
+
+          // Courbure progressive de la trajectoire
+          let courbe = p.sin(t * p.PI) * courbure;
+
+
+          // Position de l'étoile
+          let x = baseX
+                + p.sin(angle) * distance
+                + p.cos(angle) * courbe;
+
+          let y = baseY
+                - p.cos(angle) * distance
+                + p.sin(angle) * courbe;
+
+
+          // Petite irrégularité aléatoire
+          x += p.random(-5, 5);
+          y += p.random(-5, 5);
+
+
+          // Taille de base : variation selon la position
+          let tailleBase = tailleMax * (1.3 - t * 0.5);
+
+          // Variation aléatoire de la taille
+          let tailleAleatoire = p.random(tailleMin, tailleMax);
+
+          // Mélange entre la taille liée à la position et le hasard
+          let taille = (tailleBase + tailleAleatoire) / 2;
+
+
+          // Étoile dessinée comme un petit point
+          p.point(x, y);
+
+          // Choix aléatoire de la forme
+          let forme = p.random();
+
+          // POINT
+          if (forme < 0.75) {
+            p.point(x, y);
+          }
+
+          // CROIX
+          else if (forme < 0.80) {
+            let tailleCroix = taille * 0.5;
+
+            p.line(
+              x - tailleCroix, y,
+              x + tailleCroix, y
+            );
+
+            p.line(
+              x, y - tailleCroix,
+              x, y + tailleCroix
+            );
+          }
+
+          // ASTÉRISQUE
+          else {
+            let tailleAsterisque = taille * 0.25;
+
+            // Branche horizontale
+            p.line(
+              x - tailleAsterisque, y,
+              x + tailleAsterisque, y
+            );
+
+            // Branche verticale
+            p.line(
+              x, y - tailleAsterisque,
+              x, y + tailleAsterisque
+            );
+
+            // Branche diagonale \
+            p.line(
+              x - tailleAsterisque, y - tailleAsterisque,
+              x + tailleAsterisque, y + tailleAsterisque
+            );
+
+            // Branche diagonale /
+            p.line(
+              x - tailleAsterisque, y + tailleAsterisque,
+              x + tailleAsterisque, y - tailleAsterisque
+            );
+          }
+        }
+      }
+    }
+
+
+
+  };
+
+  p.windowResized = function () {
+    p.resizeCanvas(holder.clientWidth, holder.clientHeight);
+  };
+}
+
+
+/* ========================= SLOT 3 ========================= */
+function sketch3(p) {
+  const holder = document.getElementById('slot-3');
+  const step = 26;
+
+  p.setup = function () {
+    p.createCanvas(holder.clientWidth, holder.clientHeight);
+    p.noLoop();
+  };
+
+  p.draw = function () {
+
+p.background("#DFDBD5")
+p.stroke("#000")
+p.noFill()
+
+// PARAMÈTRES
+let nbSpirales = p.floor( p.random(12,100) );    // nombre de spirales
+let nbPoints = p.floor( p.random(50,215) );      // points par spirale
+let rayonMax = p.floor( p.random(115,415) );      // taille du champ
+let taillePoint = 2.1;     // taille des petits cercles
+let ouverture = 0.22;      // ouverture de la spirale
+let deformation = p.floor( p.random(8,100) );    // mouvement organique
+
+
+// ========================================
+// CENTRE DU DESSIN
+// ========================================
+
+let centreX = p.width * 0.50;
+let centreY = p.height * 0.50;
+
+
+// ========================================
+// SPIRALES
+// ========================================
+
+for (let s = 0; s < nbSpirales; s++) {
+
+  // Décalage entre les différentes spirales
+  let decalage = p.map(
+    s,
+    0,
+    nbSpirales,
+    0,
+    p.TWO_PI
+  );
+
+  p.beginShape();
+
+  for (let pt = 0; pt < nbPoints; pt++) {
+
+    // Progression de 0 à 1
+    let t = pt / (nbPoints - 1);
+
+    // ------------------------------------
+    // RAYON
+    // ------------------------------------
+
+    let rayon = t * rayonMax;
+
+
+    // ------------------------------------
+    // ANGLE DE LA SPIRALE
+    // ------------------------------------
+
+    let angle =
+      t * p.TWO_PI * 3.5
+      + decalage;
+
+
+    // ------------------------------------
+    // DÉFORMATION ORGANIQUE
+    // ------------------------------------
+
+    let vague =
+      p.sin(angle * 2 + s * 0.4)
+      * deformation
+      * t;
+
+    let vague2 =
+      p.sin(angle * 5 + s)
+      * deformation
+      * 0.35
+      * t;
+
+
+    // ------------------------------------
+    // POSITION
+    // ------------------------------------
+
+    let r = rayon + vague + vague2;
+
+    let x =
+      centreX
+      + p.cos(angle) * r;
+
+    let y =
+      centreY
+      + p.sin(angle) * r;
+
+
+    // ------------------------------------
+    // PETIT CERCLE
+    // ------------------------------------
+
+    // On utilise un point comme petit élément
+    // du champ spiralé.
+
+    p.circle(
+      x,
+      y,
+      taillePoint
+    );
+  }
+
+  p.endShape();
+}
+
+  };
+
+  p.windowResized = function () {
+    p.resizeCanvas(holder.clientWidth, holder.clientHeight);
+  };
+}
+
+/* ===== Instanciation : chaque sketch dans son conteneur ===== */
+new p5(sketch1, 'slot-1');
+new p5(sketch2, 'slot-2');
+new p5(sketch3, 'slot-3');
+
+
+/* =====  ===== */
+function dessineEnveloppe(p,cx1, cy1, r1, cx2, cy2, r2, nbLignes, vitesseA, vitesseB, dephasage) {
+  for (let i = 0; i < nbLignes; i++) {
+    let t = i / nbLignes;
+    let angleA = t * p.TWO_PI * vitesseA;
+    let angleB = t * p.TWO_PI * vitesseB + dephasage;
+
+
+    let xA = cx1 + p.cos(angleA) * r1;
+    let yA = cy1 + p.sin(angleA) * r1;
+    let xB = cx2 + p.cos(angleB) * r2;
+    let yB = cy2 + p.sin(angleB) * r2;
+
+
+    p.line(xA, yA, xB, yB);
+  }
+}
+
+
+</script>
+<!-- Recharge la page toutes les 10 secondes -->
+<script>
+  setTimeout(function () { location.reload(); }, 10000);
+</script>
+</body>
+</html>
