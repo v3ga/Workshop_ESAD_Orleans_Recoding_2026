@@ -67,4 +67,4 @@ Dans le dossier / drive https://drive.google.com/drive/folders/1ym-fd3AQx3gC_75Q
 - [Computer art on V&A museum](https://collections.vam.ac.uk/search/?id_category=THES49037&page=1&page_size=15)
 
 
-<img src="img/260918_Atelier_Recoding_ESAD_Orléans_06_w2000.jpeg" /><img src="img/260918_Atelier_Recoding_ESAD_Orléans_04_w1000.jpeg" width="400" /><img src="img/260918_Atelier_Recoding_ESAD_Orléans_03_w1000.jpeg" width="400px"/><img src="img/260918_Atelier_Recoding_ESAD_Orléans_05_w1000.jpeg" width="400px"/>
+<img src="img/260918_Atelier_Recoding_ESAD_Orléans_06_w2000.jpg" /><img src="img/260918_Atelier_Recoding_ESAD_Orléans_04_w1000.jpeg" width="400" /><img src="img/260918_Atelier_Recoding_ESAD_Orléans_03_w1000.jpeg" width="400px"/><img src="img/260918_Atelier_Recoding_ESAD_Orléans_05_w1000.jpeg" width="400px"/>
