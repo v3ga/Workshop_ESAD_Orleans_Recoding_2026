@@ -9,7 +9,7 @@ En jouant sur les paramètres, les règles ou la structure même des algorithmes
 
 Les créations réalisées pendant l'atelier seront ensuite dessinées à l'aide de plotters faisant le lien entre programmation, dessin algorithmique et matérialité du trait.
 
-<img src="251119_Plots_workshop_ESAD_4096w.jpg" />
+<img src="img/260918_Atelier_Recoding_ESAD_Orléans_01_w2000.jpeg" />
 
 ## Collection de sketches
 https://editor.p5js.org/v3ga/collections/N_0k_UUxE
@@ -65,3 +65,6 @@ Dans le dossier / drive https://drive.google.com/drive/folders/1ym-fd3AQx3gC_75Q
 - [Recoding : aux sources du dessin génératif / Stereolux / 2026](https://github.com/v3ga/Workshop_Recoding_Stereolux_2026)<br />Atelier à Stereolux (Nantes) sur le même thème.
 - [p5.plotSvg](https://github.com/golanlevin/p5.plotSvg) <br />_p5.js library for exporting SVG files tailored for pen plotting._
 - [Computer art on V&A museum](https://collections.vam.ac.uk/search/?id_category=THES49037&page=1&page_size=15)
+
+
+<img src="img/260918_Atelier_Recoding_ESAD_Orléans_03_w1000.jpeg" width="400px"/><img src="img/260918_Atelier_Recoding_ESAD_Orléans_05_w1000.jpeg" width="400px"/>
