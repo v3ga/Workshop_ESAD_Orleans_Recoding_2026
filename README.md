@@ -57,6 +57,9 @@ Dans le dossier / drive https://drive.google.com/drive/folders/1ym-fd3AQx3gC_75Q
 - télécharger :
     - le fichier .svg et .png du dessin
     - une photo du dessin
+ 
+### Galerie
+https://www.v3ga.net/esad/2026/
 
 ## Ressources 
 - [recodeproject.com](https://recodeproject.com/)<br />_The ReCode Project is a community-driven effort to preserve computer art by translating it into a modern programming language (p5.js). Every translated work will be available to the public to learn from, share, and build on._
@@ -67,4 +70,4 @@ Dans le dossier / drive https://drive.google.com/drive/folders/1ym-fd3AQx3gC_75Q
 - [Computer art on V&A museum](https://collections.vam.ac.uk/search/?id_category=THES49037&page=1&page_size=15)
 
 
-<img src="img/260918_Atelier_Recoding_ESAD_Orléans_06_w2000.jpg" /><img src="img/260918_Atelier_Recoding_ESAD_Orléans_04_w1000.jpeg" width="400" /><img src="img/260918_Atelier_Recoding_ESAD_Orléans_03_w1000.jpeg" width="400px"/><img src="img/260918_Atelier_Recoding_ESAD_Orléans_05_w1000.jpeg" width="400px"/>
+<a hred="https://www.v3ga.net/esad/2026/" target="_blank"><img src="img/260918_Atelier_Recoding_ESAD_Orléans_06_w2000.jpg" /></a><img src="img/260918_Atelier_Recoding_ESAD_Orléans_04_w1000.jpeg" width="400" /><img src="img/260918_Atelier_Recoding_ESAD_Orléans_03_w1000.jpeg" width="400px"/><img src="img/260918_Atelier_Recoding_ESAD_Orléans_05_w1000.jpeg" width="400px"/>
